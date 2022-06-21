@@ -1,21 +1,18 @@
 class Program {
     public static void main(String[] args) {
-
-        String name = "Jiten";
         boolean isMarried = true;
         byte age = 38; // 8 bits: -127 to 127
         int yearOfBirth;
         int i = 0, j = 1;
+        String name = "Jiten    Palaparthi";
         yearOfBirth = 1984;
         System.out.println("Name:" + name + "\tAge:" + age + "\tYearOfBirth:" + yearOfBirth);
         System.out.println("Married:" + isMarried);
         System.out.println("i:" + i);
         System.out.println("j:" + j);
-
         int x = 4;
         x = x + 5;
         System.out.println("Value of X:" + x);
-
         System.out.println("Cofficient Value of X:" + x / 2);
 
         System.out.println("Reminder of X:" + x % 2);
