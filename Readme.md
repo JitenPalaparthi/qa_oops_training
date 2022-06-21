@@ -1,4 +1,20 @@
-# Create-Compilation-Run
+# .Net and Java Installations
+
+## Visual Studio Code and Extensions
+
+- Step-0 :https://code.visualstudio.com/download
+- Step-0.1 : Go to help/update vscode
+- Step-1: Check .net and java are installed.Open your terminal(in Unix based) or PowerShell(in Windows)..execute the below commands one after the other.
+  - Step-1.1: ```dotnet --info```
+  - Step-1.2: ```java -version```
+  - Step-1.3: If 1.1 is failed, then install .net core by following the link https://dotnet.microsoft.com/en-us/download
+  - Step-1.4: If 1.2 is failed, then install java by following the link https://www.oracle.com/java/technologies/downloads/
+- Step-2: Upon successful step-1, install .net and c# extensions in Visual Studio Code(ctrl+shift+x) --> .Net Extension Packs,.NET Install Tool for Extension Authors,C# for Visual Studio Code by Microsoft.
+- Step-3: Install java extensions in Visual Studio Code(ctrol_shift+x) -->  Extension Pack for Java, Debugger for Java, Test Runner for Java, Language Support for Java(TM)  
+- Step-4: Create a directory to write all your programs.
+- Step-5: ```git clone https://github.com/JitenPalaparthi/qa_oops_training.git```
+
+## Create-Compilation-Run
 
 ## CSharp
 
