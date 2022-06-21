@@ -1,3 +1,6 @@
+package firstClass;
+
+import pack.*;
 class Program {
     public static void main(String[] args) {
         Tax t1; // This is only declaration but not instantiation
@@ -7,8 +10,3 @@ class Program {
     }
 }
 
-class Tax{
-    public double getTax(double salary){
-        return salary * 0.25;
-    }
-}
