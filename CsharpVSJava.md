@@ -9,7 +9,7 @@ Scanner s = new Scanner(System.in);
 
 Scanner s = new Scanner(System.in);
         String line=  s.nextLine();
-
+boolean  
 
 C#:
 
@@ -20,3 +20,5 @@ $"Hello{name}"
 int num = int.Parse(Console.ReadLine());
 
 String line = Console.ReadLine();
+
+bool
