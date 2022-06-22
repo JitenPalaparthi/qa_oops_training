@@ -30,7 +30,7 @@ namespace Lab1
             }
             else
             {
-                Console.WriteLine("There are only four seasons on earth. Probably you gave the month for any other planet");
+                Console.WriteLine("There are only four seasons and 12 months on earth. Probably you gave the month for any other planet");
             }
         }
     }

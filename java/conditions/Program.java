@@ -22,7 +22,7 @@ public class Program {
         Season season = new Season();
         String s = season.getSeason((byte)month);
 
-        if (s.equals("winter")) {
+        if (s.equals("winter")) {  System.out.println("Enter a month in digit");
             System.out.println("Snowball time");
         } else if (s.equals("spring")) {
             System.out.println("Weddings and seremonies");
@@ -34,5 +34,20 @@ public class Program {
             System.out
                     .println("There are only four seasons on earth. Probably you gave the month for any other planet");
         }
+
+        int year = 2019;
+
+        if (year<2022){
+            System.out.println("Year is less than 2022");
+        }else if (year<2021){
+            System.out.println("Year is less than 2021");
+        }else if(year<2020){
+            System.out.println("Year is less than 2020");
+        }else if(year == 2019){
+            System.out.println("Year 2019 ");
+        }else{
+            System.out.println("Year is less than 2019");
+        }
+
     }
 }
