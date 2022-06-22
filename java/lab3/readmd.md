@@ -2,4 +2,4 @@
 ```javac -d . Program.java```
 
 ***How to run***
-```java lab3.Program```
+```java Program```

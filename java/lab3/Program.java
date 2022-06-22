@@ -1,7 +1,7 @@
 package lab3;
 
 import java.util.Scanner;
-//import pack1;
+import pack1.*;
 
 class Program {
     public static void main(String[] args) {
@@ -43,7 +43,7 @@ class Program {
     }
 }
 
-class Lab3Exercise {
+/*class Lab3Exercise {
 
     public int getInt(String prompt) {
         System.out.println(prompt);
@@ -67,4 +67,4 @@ class Lab3Exercise {
     public void convertInputToStonesPounds(int pounds) {
         System.out.println("stones " + pounds / 14 + " & pounds " + pounds % 14);
     }
-}
+}*/

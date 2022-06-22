@@ -25,6 +25,4 @@ public class Lab3Exercise {
     public void convertInputToStonesPounds(int pounds) {
         System.out.println("stones " + pounds / 14 + " & pounds " + pounds % 14);
     }
-} sample {
-    
-}
+} 
