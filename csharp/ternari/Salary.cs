@@ -1,6 +1,6 @@
 namespace SalaryCaluclation{
 public class Employee{
-    public double CaluclatePF(double salary){
+    public double CaluclateBonus(double salary){
         if (salary>2100){
             return salary*0.4;
         }else{

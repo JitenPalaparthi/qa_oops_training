@@ -1,4 +1,5 @@
-﻿namespace Ternari
+﻿using SalaryCaluclation;
+namespace Ternari
 {
 
     class Program
