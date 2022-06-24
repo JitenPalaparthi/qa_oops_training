@@ -8,7 +8,7 @@ namespace Lesson8
         {
 
             Car mycar = new Car();
-           // mycar.make = "Ford"; this cannot be accessed because make is private
+            // mycar.make = "Ford"; this cannot be accessed because make is private
             mycar.SetMake("Ford Endeavour");
             mycar.Start();
             mycar.GetState();
@@ -28,6 +28,20 @@ namespace Lesson8
     {
         private string make;
         private int speed;
+
+        public string Make
+        {
+            get { return make; }
+            set { make = value; }
+        }
+
+        public int Speed
+        {
+            get { return speed; }
+            set { speed = value; }
+        }
+
+
         public void Start()
         {
             Console.WriteLine("Car {0} Starting", this.make);
@@ -48,14 +62,16 @@ namespace Lesson8
             if (this.speed > 0)
             {
                 Console.WriteLine("{0} is accelerating with the speed of {1}", this.make, this.speed);
-            }else{
-                Console.WriteLine("{0} is not accelerating.",this.make);
+            }
+            else
+            {
+                Console.WriteLine("{0} is not accelerating.", this.make);
             }
         }
 
-        public void SetMake(string make){
+        public void SetMake(string make)
+        {
             this.make = make;
         }
-
     }
 }
