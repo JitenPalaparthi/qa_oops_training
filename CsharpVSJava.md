@@ -13,6 +13,13 @@ boolean
 
 int[][] twoDArray = new int[2][2];
 
+  public String getMake() {
+        return this.make;
+    }
+    public void setMake(String make) {
+        this.make = make;
+    }
+
 C#:
 
 Console.WriteLine("Hello World");
@@ -26,3 +33,9 @@ String line = Console.ReadLine();
 bool
 
 int[,] twoDArray = new int[2,2]
+
+ public string Make
+        {
+            get { return make; }
+            set { make = value; }
+        }

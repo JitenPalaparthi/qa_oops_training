@@ -17,12 +17,41 @@ public class Program {
         mycar.stop();
         mycar.getState();
 
+        System.out.println("Car with constructor--------------------------------");
+
+        Car mycar2 = new Car("Toyota", "Yaris", 20);
+        mycar2.start();
+        mycar2.getState();
+        mycar2.accelerate();
+        mycar2.getState();
+        mycar2.accelerate();
+        // mycar.speed=260;
+        mycar2.getState();
+        mycar2.accelerate();
+        mycar2.stop();
+        mycar2.getState();
     }
 }
 
 class Car {
     private String make;
     private int speed;
+    private String model;
+
+    public Car() {
+
+    }
+
+    public Car(String make, int speed) {
+        this.make = make;
+        this.speed = speed;
+    }
+
+    public Car(String make, String model, int speed) {
+        this.make = make;
+        this.model = model;
+        this.speed = speed;
+    }
 
     public void start() {
         System.out.println("Car " + make + " Starting");
@@ -45,7 +74,19 @@ class Car {
         }
     }
 
+    public String getMake() {
+        return this.make;
+    }
+
     public void setMake(String make) {
         this.make = make;
+    }
+
+    public int getSpeed() {
+        return this.speed;
+    }
+
+    public void setSpeed(int speed) {
+        this.speed = speed;
     }
 }

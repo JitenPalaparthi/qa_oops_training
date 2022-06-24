@@ -19,6 +19,21 @@ namespace Lesson8
             mycar.GetState();
             mycar.Stop();
             mycar.GetState();
+            Console.WriteLine("Car with constructor--------------------------------");
+            Car mycar2 = new Car("Toyota", "Yaris", 20);
+            // mycar.make = "Ford"; this cannot be accessed because make is private
+            mycar2.Start();
+            mycar2.GetState();
+            mycar2.Accelerate();
+            mycar2.Accelerate();
+            mycar2.GetState();
+            mycar2.Accelerate();
+            mycar2.GetState();
+            mycar2.Stop();
+            mycar2.GetState();
+
+
+
         }
     }
 
@@ -29,6 +44,25 @@ namespace Lesson8
         private string make;
         private int speed;
 
+        public Car()
+        {
+
+        }
+
+        public Car(string make, int speed)
+        {
+            this.make = make;
+            this.speed = speed;
+        }
+        public Car(string make, string model, int speed)
+        {
+            this.make = make;
+            this.Model = model;
+            this.speed = speed;
+        }
+
+        public string Model { get; set; }
+
         public string Make
         {
             get { return make; }
@@ -38,7 +72,13 @@ namespace Lesson8
         public int Speed
         {
             get { return speed; }
-            set { speed = value; }
+            set
+            {
+                if (value > 0)
+                {
+                    speed = value;
+                }
+            }
         }
 
 
