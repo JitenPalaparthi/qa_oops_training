@@ -31,7 +31,6 @@ public class Program {
         mycar2.stop();
         mycar2.getState();
 
-
         System.out.println("Car with chain of constructor--------------------------------");
 
         Car mycar3 = new Car("Yaris");
@@ -45,7 +44,26 @@ public class Program {
         mycar3.accelerate();
         mycar3.stop();
         mycar3.getState();
+
+        Car mycar5 = getPoolCar();
+        // mycar5.start();
+        Car mycar6 = getHireCar();
+        mycar6.start();
+        mycar6.stop();
     }
+
+    public static Car getPoolCar() {
+        Car pCar = null;
+
+        return pCar;
+    }
+
+    public static Car getHireCar() {
+        Car hCar = new Car("Corolla");
+
+        return hCar;
+    }
+
 }
 
 class Car {
@@ -62,9 +80,8 @@ class Car {
         this.speed = speed;
     }
 
-
     public Car(String model) {
-               this("toyota", model,20);
+        this("toyota", model, 20);
     }
 
     public Car(String make, String model, int speed) {

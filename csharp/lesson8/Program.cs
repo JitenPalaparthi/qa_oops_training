@@ -45,7 +45,23 @@ namespace Lesson8
             mycar3.Stop();
             mycar3.GetState();
 
+            mycar5 = getPoolCar();
+            mycar6 = getHireCar();
+
         }
+
+
+    public static Car getPoolCar() {
+        car pCar = null;
+
+        return pCar;
+    }
+
+    public static Car getHireCar() {
+        car hCar = new Car("Corolla");
+
+        return hCar;
+    }
     }
 
     // create a new class called car
