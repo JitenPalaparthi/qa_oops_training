@@ -32,7 +32,18 @@ namespace Lesson8
             mycar2.Stop();
             mycar2.GetState();
 
-
+            Console.WriteLine("Car with chain of constructor--------------------------------");
+            Car mycar3 = new Car("Yaris");
+            // mycar.make = "Ford"; this cannot be accessed because make is private
+            mycar3.Start();
+            mycar3.GetState();
+            mycar3.Accelerate();
+            mycar3.Accelerate();
+            mycar3.GetState();
+            mycar3.Accelerate();
+            mycar3.GetState();
+            mycar3.Stop();
+            mycar3.GetState();
 
         }
     }
@@ -54,13 +65,18 @@ namespace Lesson8
             this.make = make;
             this.speed = speed;
         }
-        public Car(string make, string model, int speed)
+        public Car(string model) : this("toyota", 20) // Chains of constructors
         {
-            this.make = make;
+            // this.make = make;
             this.Model = model;
-            this.speed = speed;
+            //this.speed = speed;
         }
-
+        public Car(string make, string model, int speed)// Chains of constructors
+        {
+            // this.make = make;
+            this.Model = model;
+            //this.speed = speed;
+        }
         public string Model { get; set; }
 
         public string Make
