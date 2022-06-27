@@ -12,7 +12,6 @@ namespace FirstClass
             arr.Add("Dave");
             arr.Add("Syed");
             arr.Add("Kenneth");*/
-
             for (int i = 1; i <= 10; i++)
             {
                 Console.WriteLine("Enter a name->{0}", i);
