@@ -1,6 +1,8 @@
+
 //import java.util.ArrayList;
 import java.util.*;
-public class Program{
+
+public class Program {
     public static void main(String[] args){
         ArrayList arr = new ArrayList();
         /*arr.Add("Jiten");
@@ -26,11 +28,24 @@ public class Program{
         int d = scanner.nextInt();
         arr.remove(d-1);
         arr.set(0,"Jitendranadh");
+        arr.add(true);
+        arr.add(12.45);
+        arr.add(new Car("Ford"));
+        arr.add(new Car("Toyota"));
+    
         System.out.println("\n\n--- Names after deletion are ----");
         for (int i=0;i<arr.size();i++)
         {
             System.out.println("Name-->"+(i+1)+": "+  arr.get(i));
        }
 
+    }
+}
+
+class Car {
+    String make;
+
+    Car(String make) {
+        this.make = make;
     }
 }
