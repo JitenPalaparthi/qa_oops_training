@@ -1,7 +1,9 @@
-import java.util.Scanner;
+import java.util.*;
+import java.io.*;
+import empsal.Employee;
 
 public class Program {
-    public static void main(String[] arguments) {
+    public static void main(String[] arguments) throws IOException {
         System.out.println("Hello World");
         // Creating Variables
 
@@ -37,17 +39,41 @@ public class Program {
         float[] bonuses = new float[sals.length];
 
         for (int i = 0; i < sals.length; i++) {
-            bonuses[i]=calculateBonus(sals[i]);
+            bonuses[i] = calculateBonus(sals[i]);
         }
         System.out.println("\n\nEmployee Details-------------------------------------------------------------------");
-        int index =0;
-        for(int id:ids){
-            System.out.println("Name:"+names[index]+"\tID:"+id+"\tSalary:"+sals[index]+"\tBonus:"+bonuses[index]+"\t Total[Sal+Bonus]:"+(sals[index]+bonuses[index]));
+        int index = 0;
+        for (int id : ids) {
+            System.out.println("Name:" + names[index] + "\tID:" + id + "\tSalary:" + sals[index] + "\tBonus:"
+                    + bonuses[index] + "\t Total[Sal+Bonus]:" + (sals[index] + bonuses[index]));
             index++;
         }
 
-    }
+        // Employee details through a class
 
+        ArrayList<Employee> empList = new ArrayList<Employee>();
+        empList.add(new Employee("Jiten", 101, 12000.56f));
+        empList.add(new Employee("Ash", 102, 16431.48f));
+        empList.add(new Employee("Ian", 103, 15897.83f));
+        empList.add(new Employee("Stefi", 104, 18767.46f));
+        empList.add(new Employee("Mathew", 105, 12999.78f));
+        System.out.println("\n\n\nEmployee details from emp class");
+
+        for (Employee emp : empList) {
+            emp.calculateBonus();
+            String linecl = emp.displayEmployee();
+            appendFile("employee-details.txt",line);
+        }
+
+        // Save details of employee in a file
+
+
+    }
+ public static void appendFile(String inFile, String line) throws IOException {
+        BufferedWriter out = new BufferedWriter(new FileWriter(inFile, true));
+        out.write(line);
+        out.close();
+    }
     public static float calculateBonus(float sal) {
         // if else condition
         if (sal <= 10000) {

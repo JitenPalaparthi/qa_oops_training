@@ -1,0 +1,5 @@
+Name:Jiten	ID:101	Salary:12000.56	Bonus:480.02	 Total[Sal+Bonus]:12480.58
+Name:Ash	ID:102	Salary:16431.48	Bonus:657.26	 Total[Sal+Bonus]:17088.74
+Name:Ian	ID:103	Salary:15897.83	Bonus:635.91	 Total[Sal+Bonus]:16533.74
+Name:Stefi	ID:104	Salary:18767.46	Bonus:750.70	 Total[Sal+Bonus]:19518.16
+Name:Mathew	ID:105	Salary:12999.78	Bonus:519.99	 Total[Sal+Bonus]:13519.77
