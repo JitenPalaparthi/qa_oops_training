@@ -20,6 +20,8 @@ int[][] twoDArray = new int[2][2];
         this.make = make;
     }
 
+final
+
 C#:
 
 Console.WriteLine("Hello World");
@@ -39,3 +41,4 @@ int[,] twoDArray = new int[2,2]
             get { return make; }
             set { make = value; }
         }
+readonly
