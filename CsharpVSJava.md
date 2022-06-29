@@ -22,6 +22,8 @@ int[][] twoDArray = new int[2][2];
 
 final
 
+For inheritance : Use extends
+
 C#:
 
 Console.WriteLine("Hello World");
@@ -42,3 +44,5 @@ int[,] twoDArray = new int[2,2]
             set { make = value; }
         }
 readonly
+
+For inheritance : Use :
