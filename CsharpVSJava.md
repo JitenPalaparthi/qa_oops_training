@@ -33,6 +33,8 @@ To access same method from baseclass super.methodName()
 
 final class
 
+class CurrentAccount extends Account implements IAccount
+
 C#:
 
 Console.WriteLine("Hello World");
@@ -63,3 +65,5 @@ in base the method must be virtual  then in derived that is override
 To access same method from baseclass base.MethodName()
 
 sealed class
+
+class CurrentAccount : Account,IAccount
