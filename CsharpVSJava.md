@@ -24,6 +24,15 @@ final
 
 For inheritance : Use extends
 
+if (shape instanceof Triangle) 
+
+@Override
+
+To access same method from baseclass super.methodName()
+
+
+final class
+
 C#:
 
 Console.WriteLine("Hello World");
@@ -46,3 +55,11 @@ int[,] twoDArray = new int[2,2]
 readonly
 
 For inheritance : Use :
+
+if(shape is Triangle)
+
+in base the method must be virtual  then in derived that is override
+
+To access same method from baseclass base.MethodName()
+
+sealed class

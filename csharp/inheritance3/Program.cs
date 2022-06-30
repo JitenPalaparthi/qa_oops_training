@@ -5,25 +5,33 @@ namespace Inheritance
     {
         public static void Main(string[] args)
         {
-            Rectangle rect = new Rectangle(12.45f, 15.45f, "Red", "X:100<>Y:120");
-            // The below two base class fields cannot be accessed because they are protected.
-            // they can only be accessed inside the deried class
-            // rect.Colour = "Red";
-            // rect.Position = "X:100<>Y:120";
-
-            Console.WriteLine("Area Of Rect:{0}\t Perimeter of Rect:{1}", rect.Area(), rect.Perimeter());
-            rect.ShowDetails();
-            //Shape shape;
-
-            Rectangle shape = new Rectangle(14.56f, 13.56f);
-
-            Console.WriteLine("Area Of Rect:{0}\t Perimeter of Rect:{1}", shape.Area(), shape.Perimeter());
-
-            Square shape1 = new Square(25.25f);
-            Console.WriteLine("Area Of Square:{0}\t Perimeter of Square:{1}", shape1.Area(), shape1.Perimeter());
+           
+            Area(new Rectangle(14.56f, 13.56f));
+            Area(new Square(14.56f));
+            //Shape rect = new Rectangle(14.56f, 13.56f);
+            /// Console.WriteLine(rect.Area());
         }
 
-       
+        public static Shape getShape(string type)
+        {
+            if (type == "rect" || type == "rectangle")
+            {
+                return new Rectangle();
+            }
+            else if (type == "square")
+            {
+                return new Square();
+            }
+            else
+            {
+                return null;
+            }
+        }
+
+        public static void Area(Shape shape)
+        {
+            Console.WriteLine("Area:{0}", shape.Area());
+        }
     }
 
     public class Shape
@@ -41,7 +49,17 @@ namespace Inheritance
             this.Position = position;
         }
 
+        public virtual float Area()
+        {
+            return 0.0f;
         }
+
+        public virtual float Perimeter()
+        {
+            return 0.0f;
+        }
+
+    }
 
     class Rectangle : Shape
     {
@@ -62,11 +80,11 @@ namespace Inheritance
             this.Length = l;
             this.Width = w;
         }
-        public  float Area()
+        public override float Area()
         {
             return this.Length * this.Width;
         }
-        public  float Perimeter()
+        public override float Perimeter()
         {
             return 2 * (this.Length + this.Width);
         }
@@ -92,11 +110,11 @@ namespace Inheritance
         {
             this.Side = s;
         }
-        public  float Area()
+        public override float Area()
         {
             return this.Side * this.Side;
         }
-        public  float Perimeter()
+        public override float Perimeter()
         {
             return 4 * this.Side;
         }
